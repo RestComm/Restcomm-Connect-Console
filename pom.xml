@@ -4,12 +4,12 @@
 	<parent>
 		<groupId>org.restcomm</groupId>
 		<artifactId>restcomm-connect</artifactId>
-		<version>8.3.0-SNAPSHOT</version>
+		<version>8.3.0-140</version>
 	</parent>
 
 	<groupId>org.restcomm</groupId>
-	<artifactId>restcomm-connect-management</artifactId>
-
+	<artifactId>restcomm-console</artifactId>
+	<version>2.0.0-SNAPSHOT</version>
 
 	<packaging>war</packaging>
 
@@ -20,6 +20,10 @@
 				<groupId>com.github.eirslett</groupId>
 				<artifactId>frontend-maven-plugin</artifactId>
 				<version>1.6</version>
+
+				<configuration>
+					<installDirectory>target</installDirectory>
+				</configuration>
 
 				<executions>
 					<execution>
